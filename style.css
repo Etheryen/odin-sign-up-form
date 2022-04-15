@@ -65,7 +65,7 @@ body {
 .form {
   background-color: white;
   height: 30vh;
-  box-shadow: 0 4px 6px #dddddd;
+  box-shadow: 0 3px 7px #dddddd;
   padding-left: 40px;
 }
 
@@ -101,11 +101,19 @@ label {
 }
 
 input {
-  width: 225px;
+  width: calc(236px - calc(10px * 2));
   height: 24px;
+  font-size: 14px;
+  padding: 1px 10px;
   background-color: #fffefe;
   border: 1px solid #E5E7EB;
   border-radius: 4px;
+}
+
+input:focus {
+  border: 1px solid var(--accent-color);
+  outline: none;
+  box-shadow: 3px 3px 3px #dddddd;
 }
 
 button {
