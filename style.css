@@ -54,10 +54,12 @@ body {
 }
 
 .hero {
-  height: calc(36vh - 16vh);
+  display: flex;
+  align-items: flex-end;
+  height: calc(36vh - 56px);
   font-size: 22px;
   font-weight: 500;
-  margin: 16vh 135px 0 40px;
+  margin: 0 135px 56px 40px;
 }
 
 .form {
@@ -94,7 +96,7 @@ label {
   font-size: 10px;
   font-weight: 600;
   color: #393939;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.7px;
   margin-bottom: 2px;
 }
 
