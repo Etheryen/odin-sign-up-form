@@ -54,11 +54,13 @@
         <div class="row">
         <div class="pair">
           <label for="password">PASSWORD</label required>
-          <input type="password" name="password" id="password">
+          <div class="errorContainer">
+            <input class="error" type="password" name="password" id="password">
+          </div>
         </div>
         <div class="pair">
           <label for="confirmPassword">CONFIRM PASSWORD</label>
-          <input type="password" name="confirmPassword" id="confirmPassword" required>
+          <input class="error" type="password" name="confirmPassword" id="confirmPassword" required>
         </div>
         </div>
       </form>

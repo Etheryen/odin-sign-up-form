@@ -79,7 +79,7 @@ body {
 form {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 22px;
 }
 
 .row {
@@ -114,6 +114,20 @@ input:focus {
   border: 1px solid var(--accent-color);
   outline: none;
   box-shadow: 3px 3px 3px #dddddd;
+}
+
+.error {
+  border: 1px solid rgb(199, 0, 0);
+}
+
+.errorContainer::after {
+  display: block;
+  content: '* Passwords do not match';
+  letter-spacing: .4px;
+  height: 20px;
+  width: 200px;
+  color: rgb(199, 0, 0);
+  font-size: 10px;
 }
 
 button {
